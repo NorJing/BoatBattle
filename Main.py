@@ -11,7 +11,7 @@ all_ship_name = ['a','b','c','d','e','f','g','h']
 all_ship_put = [0, 0, 0, 0, 0, 0, 0, 0]
 
 # put boats
-print "put boats!"
+print("put boats!")
 for ship_number in range(8):
     while all_ship_put[ship_number] == 0:
         # generate the ship head
@@ -41,13 +41,14 @@ for ship_number in range(8):
         else:
             all_ship_put[ship_number] = 0
 
-for row in range(0,10):
-    print ocean[row]
+for row in ocean:
+    print(row)
 
-print "Boats are ready!"
-print "----------------------------------------------"
-print "Start bomb!"
+print("Boats are ready!")
+print("----------------------------------------------")
+print("Start bomb!")
 ocean = [['' for x in range(10)] for y in range(10)]
-for row in range(0,10):
-    print ocean[row]
-print "Done!"
+for row in ocean:
+    print(row)
+
+print("Done!")
